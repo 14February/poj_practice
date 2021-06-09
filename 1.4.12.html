@@ -1,0 +1,11 @@
+<script>
+    var distance = Number(prompt());
+    var bikeTime = distance / 3 + 27 + 23;
+    var walkTime = distance / 1.2;
+    if (bikeTime > walkTime)
+        console.log('Walk');
+    else if (bikeTime < walkTime)
+        console.log('Bike');
+    else 
+        console.log('All');
+</script>

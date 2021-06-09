@@ -1,0 +1,36 @@
+<script>
+    var num1 = Number(prompt());
+    var char = prompt();
+    var num2 = Number(prompt());
+    var char = prompt();
+    var num3 = Number(prompt());
+    var delta = num2 * num2 - 4 * num1 * num3;
+    if (delta == 0) {
+        console.log('x1=x2=' + ((-num2) / (2 * num1)).toFixed(5));
+    } else if (delta > 0) {
+        var x1 = ((-num2) + Math.sqrt(delta)) / (2 * num1);
+        var x2 = ((-num2) - Math.sqrt(delta)) / (2 * num1);
+        if (x1 < x2) {
+            var temp = x1;
+            x1 = x2;
+            x2 = temp;
+        }
+        console.log('x1=' + x1.toFixed(5) + ';' + 'x2=' + x2.toFixed(5));
+    } else {
+        var x = ((-num2) / (2 * num1)).toFixed(5);
+        var x11 = (Math.sqrt(-delta)) / (2 * num1);
+        var x12 = -(Math.sqrt(-delta)) / (2 * num1);
+        if (x11 < x12) {
+            var temp = x11;
+            x11 = x12;
+            x12 = temp;
+        }
+        if (x11 < 0) {
+            console.log('x1=' + x + x11.toFixed(5) + 'i' + ';' + 'x2=' + x + x12.toFixed(5) + 'i');
+        } else if (x11 > 0 && x12 > 0) {
+            console.log('x1=' + x + '+' + x11.toFixed(5) + 'i' + ';' + 'x2=' + x + '+' + x12.toFixed(5) + 'i');
+        } else if (x11 > 0 && x12 < 0) {
+            console.log('x1=' + x + '+' + x11.toFixed(5) + 'i' + ';' + 'x2=' + x + x12.toFixed(5) + 'i');
+        }
+   }
+</script>

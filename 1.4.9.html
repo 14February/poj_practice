@@ -1,0 +1,22 @@
+<script>
+    var num = Number(prompt());
+    var divider1 = 3;
+    var divider2 = 5;
+    var divider3 = 7;
+    if (num % divider1 == 0 && num % divider2 == 0 && num % divider3 == 0)
+        console.log(divider1 + ' ' + divider2 + ' ' + divider3);
+    else if (num % divider1 == 0 && num % divider2 == 0)
+        console.log(divider1 + ' ' + divider2);
+    else if (num % divider1 == 0 && num % divider3 == 0)
+        console.log(divider1 + ' ' + divider3);
+    else if (num % divider2 == 0 && num % divider3 == 0)
+        console.log(divider2 + ' ' + divider3);
+    else if (num % divider1 == 0)
+        console(divider1);
+    else if (num % divider2 == 0)
+        console.log(divider2);
+    else if (num % divider3 == 0)
+        console.log(divider3);
+    else 
+        console.log('n');
+</script>

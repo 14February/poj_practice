@@ -1,0 +1,11 @@
+<script>
+    var num = Number(prompt());
+    var res;
+    if (0 <= num < 5)
+        res = -num + 2.5;
+    else if (5 <= num < 10)
+        res = 2 - 1.5 * (num - 3) * (num - 3);
+    else 
+        res = num / 2 - 1.5;
+    console.log(res.toFixed(3));
+</script>

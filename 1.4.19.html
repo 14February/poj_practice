@@ -1,0 +1,40 @@
+<script>
+    var operand1 = Number(prompt());
+    var operand2 = Number(prompt());
+    var operator = prompt();
+    var res;
+    switch (operator) {
+        case '+':
+            res = operand1 + operand2;
+            console.log(res);
+            break;
+        case '-':
+            res = operand1 - operand2;
+            console.log(res);
+            break;
+        case '*':
+            res = operand1 * operand2;
+            console.log(res);
+            break;
+        case '/':
+            if (operand2 == 0) {
+                console.log('Divided by zero!');
+            } else {
+                res = operand1 / operand2;
+                console.log(res);
+            }
+            break;
+        default:
+            console.log('Invalid operator!');
+    }
+    // if (operator == '+' || operator == '-' 
+    //     || operator == '*' || operator == '/') {
+    //     if (operator == '/' && operand2 == 0)
+    //         console.log('Divided by zero!');
+    //     else
+    //         console.log(operand1 + operator + operand2);
+    // } else {
+    //     console.log('Invalid operator!');
+    // } 
+
+</script>
